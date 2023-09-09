@@ -4,20 +4,21 @@
 /**
  * main - Entry point
  *
- * Return Always 0 (success)
+ * Return: Always 0 (success)
 */
 
 int main(void)
 {
 	int i;
+	char letter;
 
-	for (i = 48; 1 < 58; i++)
+	for (num = 0; num < 10; num++)
 	{
-		putchar(i);
+		putchar ((num % 10) + '0');
 	}
-	for (i = 97; 1 < 103; i++)
+	for (letter = 'a'; letter <= 'f'; letter++)
 	{
-		putchar(i);
+		putchar(letter);
 	}
 	putchar('\n');
 	return (0);
